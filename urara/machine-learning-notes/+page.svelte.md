@@ -87,7 +87,7 @@ def compute_cost(X,y,theta):
 ```
 
 
-```python
+```py
 # Implementation of Gradient Descent Algorithm
 def gradient_descent(X,y,theta,alpha, num_iters):
   """
