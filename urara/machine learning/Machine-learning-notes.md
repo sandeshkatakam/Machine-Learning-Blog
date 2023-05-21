@@ -1,14 +1,14 @@
 ---
-title: 'Machine Learning Cousre Notes(Andrew Ng Course)' // title
-image: '/hello-world/urara.webp' // title image
-created: 2021-11-01 // create time
-updated: 2021-12-12 // update time
-published: 2021-11-04 // publish time
-tags: // label
+title: 'Machine Learning Cousre Notes(Andrew Ng Course)' 
+image: '/hello-world/urara.webp' 
+created: 2021-11-01 
+updated: 2021-12-12 
+published: 2021-11-04 
+tags: 
   - 'Machine Learning'
   - 'AndrewNg'
-flags: // custom flags
-  - unlisted // hide article on the home page
+flags: 
+  - unlisted 
 ---
 
 
