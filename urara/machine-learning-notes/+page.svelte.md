@@ -6,15 +6,6 @@ tags: ['Machine Learning']
 toc: true
 ---
 
-This post has disabled table of contents.
-
-When the `toc: false` on Front-Matter, toc should not be displayed.
-
-## Heading
-
-### Heading
-
-#### Heading
 # Machine Learning Course Notes - AndrewNg(with code implementations of Algorithms)
 > My entire Machine learning course notes along with code implementations for all algorithms. The notes are based on the course taught by AndrewNg offered by stanford on Coursera.
 
