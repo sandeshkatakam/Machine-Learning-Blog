@@ -85,8 +85,8 @@ size of house is the input data($x$) we given in for the model in housing price 
 **Idea of Regression:**
 Choose paramters $\theta$ and $\theta_{0}$ such that our hypothesis function $h_{\theta}(x)$ is close to $y$ for our training examples.  
 
-For linear regression, we are going to solve a minimization problem, where the term: 
-$$(h_{\theta}(x) - y)^{2} → should \ be \ minimized$$
+For linear regression, we are going to solve a minimization problem, where the below term should be minimized: 
+$$(h_{\theta}(x) - y)^{2}$$
  
 
 Representation of our Hypothesis function: 
@@ -195,7 +195,7 @@ $$\min_{(\theta_{0},\theta_{1}, \theta_{2},.... \theta_{n})} J(\theta_{0},\theta
 
 #### Algorithm:  
 Repeat until convergence { 
-$$\theta_{j} := \theta_{j} - (\alpha)\frac{\partial J(\theta_{0}, \theta_{1})}{\partial θ_{j}} for j = 0 \ and \ j = 1$$
+$$\theta_{j} := \theta_{j} - (\alpha)\frac{\partial J(\theta_{0}, \theta_{1})}{\partial θ_{j}}$$ for j = 0  and  j = 1
 
 }
 * $\alpha$ is the learning rate(It determines how big a step we take during the optimization)
