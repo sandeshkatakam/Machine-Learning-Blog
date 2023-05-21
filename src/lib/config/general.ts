@@ -56,6 +56,15 @@ export const head: HeadConfig = {}
 export const header: HeaderConfig = {
   nav: [
     {
+      text: 'Reinforcement Learning',
+      children: [
+        {
+          text: 'David Silver Reinforcement Learning Course Notes',
+          link: '/reinforcement-learning/'
+        }
+      ]
+    },
+    {
       text: 'NeuralODEs',
       children: [
         {
