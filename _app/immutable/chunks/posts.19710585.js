@@ -1,0 +1,1 @@
+import"./index.85533aa3.js";import"./icon.1b15a33a.js";const a=e=>e.title?"article":e.image?"photo":e.audio?"audio":e.video?"video":e.bookmark_of?"bookmark":e.like_of?"like":e.repost_of?"repost":e.in_reply_to?"reply":"note",l=e=>[...new Set(e.reduce((t,o)=>o.tags?[...t,...o.tags]:t,[""]).slice(1))];export{l as g,a as t};
