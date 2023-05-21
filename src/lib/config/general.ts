@@ -52,9 +52,32 @@ export const theme: ThemeConfig = [
 ]
 
 export const head: HeadConfig = {}
-
 export const header: HeaderConfig = {
   nav: [
+    {
+      icon: 'i-mdi-card-account-details-outline',
+      text: 'About Me',
+      link: '/about-me'
+    },
+    {
+      icon: 'i-mdi-folder-wrench-outline',
+      text: 'Things I build',
+      link: '/things-i-build'
+    }
+  ]
+}
+export const header: HeaderConfig = {
+  nav: [
+    {
+      icon: 'i-mdi-card-account-details-outline',
+      text: 'About Me',
+      link: '/about-me'
+    },
+    {
+      icon: 'i-mdi-folder-wrench-outline',
+      text: 'Portfolio',
+      link: '/portfolio'
+    }
     {
       text: 'Get Started',
       link: '/hello-world'
