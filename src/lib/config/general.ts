@@ -56,12 +56,31 @@ export const head: HeadConfig = {}
 export const header: HeaderConfig = {
   nav: [
     {
-      text: 'Get Started',
-      link: '/hello-world'
+      text: 'NeuralODEs',
+      children: [
+        {
+          text: 'Notes on Neural Differential Equations',
+          link: '/neuralodes/notes/'
+        },
+        {
+          text: 'Introduction to Neural ODEs',
+          link: '/neuralodes/neuralode-post/'
+        }
+      ]
+    },
+
+    {
+      text: 'Machine Learning',
+      children: [
+        {
+          text: 'Notes on Machine Learning',
+          link: '/machine-learning/'
+        }
+      ]
     },
     {
-      text: 'Elements',
-      link: '/hello-world/elements'
+      text: 'Open Source Projects',
+      link: '/open-source/'
     }
   ]
 }
