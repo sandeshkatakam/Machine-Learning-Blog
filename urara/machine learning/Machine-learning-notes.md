@@ -1,14 +1,16 @@
 ---
-title: "Machine Learning Course Notes (AndrewNg Course)"
-toc: true
-category: articles
-collection: notes
-permalink: /_notes/2021-11-01-machine-learning-course-notes-andrewng// 
-excerpt: ' My entire Machine learning course notes along with code implementations for all algorithms. The notes are based on the course taught by AndrewNg offered by stanford on Coursera'
-date: 2021-11-01
-venue: ''
-
+title: 'Machine Learning Cousre Notes(Andrew Ng Course)' // title
+image: '/hello-world/urara.webp' // title image
+created: 2021-11-01 // create time
+updated: 2021-12-12 // update time
+published: 2021-11-04 // publish time
+tags: // label
+  - 'Machine Learning'
+  - 'AndrewNg'
+flags: // custom flags
+  - unlisted // hide article on the home page
 ---
+
 
 # Machine Learning Course Notes - AndrewNg(with code implementations of Algorithms)
 > My entire Machine learning course notes along with code implementations for all algorithms. The notes are based on the course taught by AndrewNg offered by stanford on Coursera.
