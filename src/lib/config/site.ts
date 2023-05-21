@@ -10,7 +10,7 @@ export const site: SiteConfig = {
   author: {
     avatar: '/assets/new_dp.png',
     name: 'Sandesh Katakam',
-    status: '🌸',
+    status: '🧠',
     bio: 'Loves to write about latest research in Machine Learning and Deep Learning'
   },
   themeColor: '#3D4451'
