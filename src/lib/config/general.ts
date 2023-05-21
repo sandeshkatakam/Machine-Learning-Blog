@@ -64,7 +64,7 @@ export const header: HeaderConfig = {
       icon: 'i-mdi-folder-wrench-outline',
       text: 'Portfolio',
       link: '/portfolio'
-    }
+    },
     {
       text: 'Get Started',
       link: '/hello-world'
