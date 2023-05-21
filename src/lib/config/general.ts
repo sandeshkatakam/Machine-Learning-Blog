@@ -56,6 +56,10 @@ export const head: HeadConfig = {}
 export const header: HeaderConfig = {
   nav: [
     {
+      text: 'Portfolio',
+      link: '/porfolio/'
+    },
+    {
       text: 'Reinforcement Learning',
       children: [
         {

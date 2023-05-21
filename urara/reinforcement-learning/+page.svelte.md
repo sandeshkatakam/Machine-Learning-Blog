@@ -34,7 +34,7 @@ Created: May 6, 2023 9:27 PM
 - Reward may be delayed
 - It may be better to sacrifice immediate reward to gain more long-term reward
 
-### Agent and Environment:
+<!-- ### Agent and Environment:
 
 - At Each step t, the agent:
     - Executes an action $A_{t}$
@@ -117,7 +117,7 @@ $$
 - A policy is Agent’s behaviour
 - map from state to action
 - **Deterministic Policy:**  $a = \pi(s)$
-- **Stochastic Policy:**   $\pi(a|s)= P[A_{t} = a | S_{t} = s]$
+- **Stochastic Policy:**   $\pi(a|s)= P[A_{t} = a | S_{t} = s]$ -->
 
 ### Value Function:
 
