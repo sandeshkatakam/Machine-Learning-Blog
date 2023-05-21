@@ -1,17 +1,20 @@
 ---
-title: 'Machine Learning Cousre Notes(Andrew Ng Course)' 
-image: '/hello-world/urara.webp' 
-created: 2021-11-01 
-updated: 2021-12-12 
-published: 2021-11-04 
-tags: 
-  - 'Machine Learning'
-  - 'AndrewNg'
-flags: 
-  - unlisted 
+title: Machine Learning Course Notes(Andrew Ng Course)
+summary: Course Notes of Andrew Ng's Machine Learning course on Coursera
+created: 2021-11-01
+tags: ['Machine Learning']
+toc: true
 ---
 
+This post has disabled table of contents.
 
+When the `toc: false` on Front-Matter, toc should not be displayed.
+
+## Heading
+
+### Heading
+
+#### Heading
 # Machine Learning Course Notes - AndrewNg(with code implementations of Algorithms)
 > My entire Machine learning course notes along with code implementations for all algorithms. The notes are based on the course taught by AndrewNg offered by stanford on Coursera.
 
