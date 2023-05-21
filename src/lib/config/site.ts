@@ -8,7 +8,7 @@ export const site: SiteConfig = {
   lang: 'en-US',
   description: 'Powered by SvelteKit/Urara',
   author: {
-    avatar: '/assets/profile_pic.png',
+    avatar: '/assets/new_dp.png',
     name: 'Sandesh Katakam',
     status: '🌸',
     bio: 'Loves to write about latest research in Machine Learning and Deep Learning'
