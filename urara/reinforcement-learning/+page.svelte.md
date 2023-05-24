@@ -34,18 +34,29 @@ Created: May 6, 2023 9:27 PM
 - Reward may be delayed
 - It may be better to sacrifice immediate reward to gain more long-term reward
 
-<!-- ### Agent and Environment:
-
+### Agent and Environment:
+<script>
+    // import functions
+import { math, display } from 'mathlifier';
+// example of using these functions
+const inlineMath = math('ax^2+bx+c=0');
+const displayedMath = display('x=\\frac{-b\\pm\\sqrt{b^2-4ac}}{2a}');
+const allowBreak = math('e^{i\\pi} = -1', { wrap: true });
+</script>
 - At Each step t, the agent:
+    - Executes an action {@html inlineMath}
+    - {@html allowBreak}
+
+<!-- - At Each step t, the agent:
     - Executes an action $A_{t}$
     - Receives observation $O_{t}$
     - Receives scalar reward $R_{t}$
 - The Environment:
     - Receives action $A_{t}$
     - Emits observation $O_{t}$
-    - Emits scalar reward $R_{t+1}$
+    - Emits scalar reward $R_{t+1}$ -->
 
-
+<!-- 
 
 ### History and State:
 
