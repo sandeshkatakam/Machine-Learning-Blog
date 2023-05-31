@@ -28,7 +28,7 @@ export default {
     csp: {
       mode: 'auto',
       directives: {
-        'style-src': ['self', 'unsafe-inline', 'https://giscus.app']
+        'style-src': ['self', 'unsafe-inline', 'https://giscus.app', 'https://cdn.jsdelivr.net']
       }
     }
   }
