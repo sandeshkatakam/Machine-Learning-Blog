@@ -39,22 +39,23 @@ Created: May 6, 2023 9:27 PM
     // import functions
 import { math, display } from 'mathlifier';
 // example of using these functions
-const inlineMath = math('ax^2+bx+c=0');
+const inlineMath = math('A_{t}');
+const outlineMath = math('R_{t}')
+const inlineMath3 = math('O_{t}')
 const displayedMath = display('x=\\frac{-b\\pm\\sqrt{b^2-4ac}}{2a}');
 const allowBreak = math('e^{i\\pi} = -1', { wrap: true });
 </script>
-- At Each step t, the agent:
-    - Executes an action {@html inlineMath}
-    - {@html allowBreak}
 
-<!-- - At Each step t, the agent:
-    - Executes an action $A_{t}$
-    - Receives observation $O_{t}$
-    - Receives scalar reward $R_{t}$
+
+ - At Each step t, the agent:
+    - Executes an action {@html inlineMath}
+    - Receives observation {@html inlineMath3}
+    - Receives scalar reward {@html outlineMath} 
+
 - The Environment:
-    - Receives action $A_{t}$
-    - Emits observation $O_{t}$
-    - Emits scalar reward $R_{t+1}$ -->
+    - Receives action {@html inlineMath}
+    - Emits observation {@html inlineMath3}
+    - Emits scalar reward {@html outlineMath}
 
 <!-- 
 

@@ -54,6 +54,24 @@ flags:
         ['Source Code', 'https://github.com/sandeshkatakam/Numerics.jl']
       ]
     },
+    {
+      label: 'Neural-JAX: Deep Learning Library',
+      icon: 'https://img.icons8.com/clouds/100/code.png',
+      desc: 'Julia package for Scientific computing and Numerical Methods',
+      links: [
+        ['Blog Post', 'https://github.com/sandeshkatakam/Neural-JAX'],
+        ['Source Code', 'https://github.com/sandeshkatakam/Neural-JAX']
+      ]
+    },
+    {
+      label: 'ML-AlgorithmsKit Library',
+      icon: 'https://img.icons8.com/clouds/100/code.png',
+      desc: 'Implementation of Standard ML Algorithms from scratch',
+      links: [
+        ['Blog Post', 'https://github.com/sandeshkatakam/ML-AlgorithmsKit'],
+        ['Source Code', 'https://github.com/sandeshkatakam/ML-AlgorithmsKit']
+      ]
+    },
   ]
 </script>
 <!-- ``` -->
