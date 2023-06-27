@@ -11,7 +11,7 @@ export const site: SiteConfig = {
     avatar: '/assets/new_dp.png',
     name: 'Sandesh Katakam',
     status: '🧠',
-    bio: 'Loves to write about latest research in Machine Learning and Deep Learning'
+    bio: 'Unraveling the Nexus: Exploring Math, Machine Learning, and Programming'
   },
   themeColor: '#3D4451'
 }
