@@ -65,35 +65,35 @@ export const header: HeaderConfig = {
         {
           text: 'David Silver Reinforcement Learning Course Notes',
           link: '/reinforcement-learning/'
+        },
+        {
+          text: 'Model-Based Reinforcement Learning: A Survey',
+          link: '/model-based-reinforcement-learning/'
         }
       ]
     },
     {
-      text: 'NeuralODEs',
+      text: 'Neural DEs',
       children: [
         {
-          text: 'Notes on Neural Differential Equations',
-          link: '/neuralodes/notes/'
-        },
-        {
-          text: 'Introduction to Neural ODEs',
+          text: 'Survey Blog post on Neural DEs',
           link: '/neuralodes/neuralode-post/'
         }
       ]
     },
 
     {
-      text: 'Machine Learning',
+      text: 'Software',
       children: [
         {
-          text: 'Notes on Machine Learning',
-          link: '/machine-learning/'
+          text: 'Introduction to NeoVim',
+          link: '/intro-to-nvim/'
         }
       ]
     },
     {
-      text: 'Open Source Projects',
-      link: '/open-source/'
+      text: 'Deep Generative Models',
+      link: '/deep-generative-models/'
     }
   ]
 }

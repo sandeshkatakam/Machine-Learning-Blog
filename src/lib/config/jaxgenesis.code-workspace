@@ -1,0 +1,23 @@
+{
+	"folders": [
+		{
+			"path": "../../../../jaxgenesis"
+		},
+		{
+			"path": "../../../../NeuralODEs-for-BraTS"
+		},
+		{
+			"path": "../../../../pytorch_bayesian_unet"
+		},
+		{
+			"path": "../../../../kaggle-clouds-segmentation-challenge"
+		},
+		{
+			"path": "../../../../sandeshkatakam.github.io"
+		},
+		{
+			"path": "../../.."
+		}
+	],
+	"settings": {}
+}

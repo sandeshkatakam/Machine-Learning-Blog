@@ -23,3 +23,4 @@ src/routes/**/+page.md
 src/static
 *.config.js
 urara.js
+urara/hello-world/
