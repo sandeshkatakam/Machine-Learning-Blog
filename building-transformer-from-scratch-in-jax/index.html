@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head prefix="og: https://ogp.me/ns#">
+    <meta charset="utf-8" />
+    <meta name="generator" content="gh:importantimport/urara" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="manifest" crossorigin="use-credentials" href="/manifest.webmanifest" />
+    <link rel="alternate" type="application/feed+json" href="/feed.json" />
+    <link rel="alternate" type="application/atom+xml" href="/atom.xml" />
+    <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.css" integrity="sha384-3UiQGuEI4TTMaFmGIZumfRPtfKQ3trwQE2JgosJxCnGmQpL/lJdjpcHkaaFwHlcI" crossorigin="anonymous">
+    
+    <meta http-equiv="content-security-policy" content="style-src 'self' 'unsafe-inline' https://giscus.app https://cdn.jsdelivr.net">
+		<link href="../_app/immutable/assets/_layout.58f6ef30.css" rel="stylesheet">
+		<link href="../_app/immutable/assets/posts.c671e754.css" rel="stylesheet">
+		<link rel="modulepreload" href="../_app/immutable/entry/start.2c8a6388.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/index.1b8dd4b1.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/singletons.828261c7.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/index.4c589ade.js">
+		<link rel="modulepreload" href="../_app/immutable/entry/app.d17af429.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/preload-helper.41c905a7.js">
+		<link rel="modulepreload" href="../_app/immutable/entry/_layout.svelte.00edf1fd.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/posts.a4c4e39c.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/icon.5e422d07.js">
+		<link rel="modulepreload" href="../_app/immutable/entry/_layout.ts.cccaddcc.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/_layout.e59680bc.js">
+		<link rel="modulepreload" href="../_app/immutable/entry/building-transformer-from-scratch-in-jax-page.svelte.md.7264f582.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/post_layout.772cde3b.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/footer.f1250b72.js"><title>Building My Transformer From Scratch in JAX | Off the Convex Path</title><!-- HEAD_svelte-1592q3p_START --><!-- HEAD_svelte-1592q3p_END --><!-- HEAD_svelte-1kxdj3d_START --><link rel="shortcut icon" href="https://urara-demo.netlify.app/favicon-32x32.png" sizes="32x32" type="image/png"><link rel="apple-touch-icon" href="https://urara-demo.netlify.app/assets/android-chrome-192x192.png" sizes="180x180" type="image/png"><link rel="icon" href="https://urara-demo.netlify.app/assets/android-chrome-192x192.png" sizes="192x192" type="image/png"><!-- HEAD_svelte-1kxdj3d_END --><!-- HEAD_svelte-1g590ms_START --><meta name="theme-color"><!-- HEAD_svelte-1g590ms_END --><!-- HEAD_svelte-abrfj_START --><meta name="author" content="Sandesh Katakam"><link rel="canonical" href="https://urara-demo.netlify.app/building-transformer-from-scratch-in-jax">
+    
+    <meta name="keywords" content="Transformers, Open Source, JAX">
+    <meta name="description" content="Building Transformer architecture from groundup in JAX Framework"><!-- HEAD_svelte-abrfj_END --><!-- HEAD_svelte-1y1uq0g_START --><meta property="og:site_name" content="Off the Convex Path"><meta property="og:locale" content="en-US"><meta property="og:type" content="article">
+    <meta property="og:title" content="Building My Transformer From Scratch in JAX">
+    <meta property="og:description" content="Building Transformer architecture from groundup in JAX Framework">
+    <meta property="og:image" content="https://urara-demo.netlify.app/building-transformer-from-scratch-in-jax/transformers_image.webp">
+      <meta name="twitter:card" content="summary_large_image">
+    <meta property="article:tag" content="Transformers"><meta property="article:tag" content="Open Source"><meta property="article:tag" content="JAX">
+    <meta property="og:url" content="https://urara-demo.netlify.app/building-transformer-from-scratch-in-jax">
+    <meta property="article:author" content="Sandesh Katakam">
+    <meta property="article:published_time" content="2023-12-01T00:00:00.000Z">
+    <meta property="article:modified_time" content="2023-12-20T08:32:44.465Z"><!-- HEAD_svelte-1y1uq0g_END -->
+  </head>
+  <body itemscope itemtype="https://schema.org/WebPage">
+    <div style="display: contents">
+
+
+
+
+
+
+
+
+
+
+<header id="header" class="fixed z-50 w-screen transition-all duration-500 ease-in-out border-b-2 border-transparent max-h-[4.125rem] false"><div class="navbar"><div class="navbar-start">
+
+<div class="dropdown lg:hidden"><label for="navbar-dropdown" tabindex="0" class="btn btn-square btn-ghost"><span class="i-heroicons-outline-menu-alt-1"></span></label>
+  <ul id="navbar-dropdown" tabindex="0" class="menu menu-compact dropdown-content bg-base-100 text-base-content shadow-lg rounded-box min-w-max max-w-52 p-2"><li><a href="/porfolio/">Portfolio</a>
+        </li></ul></div>
+<div class="swap order-last hidden lg:inline-grid"><button class="swap-on btn btn-ghost text-base font-normal normal-case transition-all duration-200 hidden"></button>
+  <ul class="swap-off menu menu-horizontal p-0"><li><a class="!rounded-btn" href="/porfolio/">Portfolio</a>
+        </li></ul></div>
+        <a href="/" class="btn btn-ghost normal-case text-lg">Off the Convex Path</a></div>
+      <div class="navbar-end">
+        <div id="change-theme" class="dropdown dropdown-end">
+          
+          <div tabindex="0" class="btn btn-square btn-ghost"><span class="i-heroicons-outline-color-swatch"></span></div>
+          
+          
+          <ul tabindex="0" class="flex flex-nowrap shadow-2xl menu dropdown-content bg-base-100 text-base-content rounded-box w-52 p-2 gap-2 overflow-y-auto max-h-[21.5rem]"><button data-theme="cmyk" class="btn btn-ghost w-full hover:bg-primary group rounded-lg flex bg-base-100 p-2 transition-all"><p class="flex-1 text-left text-base-content group-hover:text-primary-content transition-color">🖨 Light</p>
+                <div class="grid grid-cols-4 gap-0.5 m-auto"><div class="bg-primary w-1 h-4 rounded-btn"></div><div class="bg-secondary w-1 h-4 rounded-btn"></div><div class="bg-accent w-1 h-4 rounded-btn"></div><div class="bg-neutral w-1 h-4 rounded-btn"></div></div>
+              </button><button data-theme="dracula" class="btn btn-ghost w-full hover:bg-primary group rounded-lg flex bg-base-100 p-2 transition-all"><p class="flex-1 text-left text-base-content group-hover:text-primary-content transition-color">🧛 Dark</p>
+                <div class="grid grid-cols-4 gap-0.5 m-auto"><div class="bg-primary w-1 h-4 rounded-btn"></div><div class="bg-secondary w-1 h-4 rounded-btn"></div><div class="bg-accent w-1 h-4 rounded-btn"></div><div class="bg-neutral w-1 h-4 rounded-btn"></div></div>
+              </button><button data-theme="valentine" class="btn btn-ghost w-full hover:bg-primary group rounded-lg flex bg-base-100 p-2 transition-all"><p class="flex-1 text-left text-base-content group-hover:text-primary-content transition-color">🌸 Valentine</p>
+                <div class="grid grid-cols-4 gap-0.5 m-auto"><div class="bg-primary w-1 h-4 rounded-btn"></div><div class="bg-secondary w-1 h-4 rounded-btn"></div><div class="bg-accent w-1 h-4 rounded-btn"></div><div class="bg-neutral w-1 h-4 rounded-btn"></div></div>
+              </button><button data-theme="aqua" class="btn btn-ghost w-full hover:bg-primary group rounded-lg flex bg-base-100 p-2 transition-all"><p class="flex-1 text-left text-base-content group-hover:text-primary-content transition-color">💦 Aqua</p>
+                <div class="grid grid-cols-4 gap-0.5 m-auto"><div class="bg-primary w-1 h-4 rounded-btn"></div><div class="bg-secondary w-1 h-4 rounded-btn"></div><div class="bg-accent w-1 h-4 rounded-btn"></div><div class="bg-neutral w-1 h-4 rounded-btn"></div></div>
+              </button><button data-theme="synthwave" class="btn btn-ghost w-full hover:bg-primary group rounded-lg flex bg-base-100 p-2 transition-all"><p class="flex-1 text-left text-base-content group-hover:text-primary-content transition-color">🌃 Synthwave</p>
+                <div class="grid grid-cols-4 gap-0.5 m-auto"><div class="bg-primary w-1 h-4 rounded-btn"></div><div class="bg-secondary w-1 h-4 rounded-btn"></div><div class="bg-accent w-1 h-4 rounded-btn"></div><div class="bg-neutral w-1 h-4 rounded-btn"></div></div>
+              </button><button data-theme="night" class="btn btn-ghost w-full hover:bg-primary group rounded-lg flex bg-base-100 p-2 transition-all"><p class="flex-1 text-left text-base-content group-hover:text-primary-content transition-color">🌃 Night</p>
+                <div class="grid grid-cols-4 gap-0.5 m-auto"><div class="bg-primary w-1 h-4 rounded-btn"></div><div class="bg-secondary w-1 h-4 rounded-btn"></div><div class="bg-accent w-1 h-4 rounded-btn"></div><div class="bg-neutral w-1 h-4 rounded-btn"></div></div>
+              </button><button data-theme="lofi" class="btn btn-ghost w-full hover:bg-primary group rounded-lg flex bg-base-100 p-2 transition-all"><p class="flex-1 text-left text-base-content group-hover:text-primary-content transition-color">🎶 Lo-Fi</p>
+                <div class="grid grid-cols-4 gap-0.5 m-auto"><div class="bg-primary w-1 h-4 rounded-btn"></div><div class="bg-secondary w-1 h-4 rounded-btn"></div><div class="bg-accent w-1 h-4 rounded-btn"></div><div class="bg-neutral w-1 h-4 rounded-btn"></div></div>
+              </button><button data-theme="lemonade" class="btn btn-ghost w-full hover:bg-primary group rounded-lg flex bg-base-100 p-2 transition-all"><p class="flex-1 text-left text-base-content group-hover:text-primary-content transition-color">🍋 Lemonade</p>
+                <div class="grid grid-cols-4 gap-0.5 m-auto"><div class="bg-primary w-1 h-4 rounded-btn"></div><div class="bg-secondary w-1 h-4 rounded-btn"></div><div class="bg-accent w-1 h-4 rounded-btn"></div><div class="bg-neutral w-1 h-4 rounded-btn"></div></div>
+              </button><button data-theme="cupcake" class="btn btn-ghost w-full hover:bg-primary group rounded-lg flex bg-base-100 p-2 transition-all"><p class="flex-1 text-left text-base-content group-hover:text-primary-content transition-color">🧁 Cupcake</p>
+                <div class="grid grid-cols-4 gap-0.5 m-auto"><div class="bg-primary w-1 h-4 rounded-btn"></div><div class="bg-secondary w-1 h-4 rounded-btn"></div><div class="bg-accent w-1 h-4 rounded-btn"></div><div class="bg-neutral w-1 h-4 rounded-btn"></div></div>
+              </button><button data-theme="garden" class="btn btn-ghost w-full hover:bg-primary group rounded-lg flex bg-base-100 p-2 transition-all"><p class="flex-1 text-left text-base-content group-hover:text-primary-content transition-color">🏡 Garden</p>
+                <div class="grid grid-cols-4 gap-0.5 m-auto"><div class="bg-primary w-1 h-4 rounded-btn"></div><div class="bg-secondary w-1 h-4 rounded-btn"></div><div class="bg-accent w-1 h-4 rounded-btn"></div><div class="bg-neutral w-1 h-4 rounded-btn"></div></div>
+              </button><button data-theme="retro" class="btn btn-ghost w-full hover:bg-primary group rounded-lg flex bg-base-100 p-2 transition-all"><p class="flex-1 text-left text-base-content group-hover:text-primary-content transition-color">🌇 Retro</p>
+                <div class="grid grid-cols-4 gap-0.5 m-auto"><div class="bg-primary w-1 h-4 rounded-btn"></div><div class="bg-secondary w-1 h-4 rounded-btn"></div><div class="bg-accent w-1 h-4 rounded-btn"></div><div class="bg-neutral w-1 h-4 rounded-btn"></div></div>
+              </button><button data-theme="black" class="btn btn-ghost w-full hover:bg-primary group rounded-lg flex bg-base-100 p-2 transition-all"><p class="flex-1 text-left text-base-content group-hover:text-primary-content transition-color">🖤 Black</p>
+                <div class="grid grid-cols-4 gap-0.5 m-auto"><div class="bg-primary w-1 h-4 rounded-btn"></div><div class="bg-secondary w-1 h-4 rounded-btn"></div><div class="bg-accent w-1 h-4 rounded-btn"></div><div class="bg-neutral w-1 h-4 rounded-btn"></div></div>
+              </button></ul></div></div></div></header>
+
+<button id="totop" aria-label="scroll to top" class="fixed grid group btn btn-circle btn-lg border-none backdrop-blur bottom-6 right-6 z-50 duration-500 ease-in-out btn-ghost bg-base-100/30 md:bg-base-200/30 translate-y-24"><div class="radial-progress text-accent transition-all duration-500 ease-in-out group-hover:text-accent-focus col-start-1 row-start-1" style="--size:4rem; --thickness: 0.25rem; --value:undefined;"></div>
+  <div class="border-4 border-base-content/10 group-hover:border-transparent col-start-1 row-start-1 rounded-full w-full h-full p-4 grid duration-500 ease-in-out"><span class="i-heroicons-solid-chevron-up !w-6 !h-6"></span></div></button>
+
+<div class="bg-base-100 md:bg-base-200 min-h-screen pt-16 md:pb-8 lg:pb-16">
+
+
+
+<div class="flex flex-col flex-nowrap justify-center xl:flex-row xl:flex-wrap"><div class="flex-1 w-full order-first ease-out transform mx-auto xl:mr-0 xl:ml-0"></div>
+  <div class="flex-1 w-full xl:order-last ease-out transform mx-auto xl:ml-0 xl:mr-0"></div>
+  <div class="flex-none w-full max-w-screen-md mx-auto xl:mx-0"><article itemscope itemtype="https://schema.org/BlogPosting" itemprop="blogPost" class="h-entry card bg-base-100 rounded-none md:rounded-box md:shadow-xl overflow-hidden z-10 md:mb-8 lg:mb-16">
+  
+  
+  <div class="card-body gap-0 "><div class="flex flex-col gap-2"><figure class="md:order-last rounded-box shadow-xl mb-4 flex-col gap-2 -mx-4 -mt-8 md:mt-0"><picture><source srcset="/_app/immutable/assets/transformers_image.dcbfe8b8.avif 736w" type="image/avif">
+    <img src="/building-transformer-from-scratch-in-jax/transformers_image.webp" alt="/building-transformer-from-scratch-in-jax/transformers_image.webp" class="u-featured" loading="lazy" decoding="async"></picture></figure>
+      <div class="flex font-semibold gap-1.5"><a rel="author" class="opacity-75 hover:opacity-100 hover:text-primary duration-500 ease-in-out p-author h-card" href="https://urara-demo.netlify.app">Sandesh Katakam</a>
+  <span class="opacity-50">/</span>
+  <a href="/building-transformer-from-scratch-in-jax" class="u-url u-uid swap group/time"><time class="group-hover/time:opacity-0 font-semibold opacity-75 duration-500 ease-in-out mr-auto dt-published" datetime="2023-12-01T00:00:00.000Z" itemprop="datePublished">Friday, Dec 1, 23</time>
+    <time class="opacity-0 group-hover/time:opacity-100 font-semibold text-primary duration-500 ease-in-out mr-auto dt-updated" datetime="2023-12-20T08:32:44.465Z" itemprop="dateModified">Wednesday, Dec 20, 23</time></a></div>
+      <h1 itemprop="name headline" class="card-title text-3xl mb-8 p-name">Building My Transformer From Scratch in JAX</h1>
+      <p itemprop="description" class="p-summary mb-auto hidden">Building Transformer architecture from groundup in JAX Framework</p></div>
+    <main itemprop="articleBody" class="urara-prose prose e-content"><h1 id="building-my-transformer-from-scratch-in-jax"><a href="#building-my-transformer-from-scratch-in-jax">Building My Transformer From Scratch in JAX</a></h1></main>
+    <div class="divider mt-4 mb-0"></div>
+      <div><a href="/?tags=Transformers" class="btn btn-sm btn-ghost normal-case mt-2 mr-2 p-category">#Transformers
+          </a><a href="/?tags=Open Source" class="btn btn-sm btn-ghost normal-case mt-2 mr-2 p-category">#Open Source
+          </a><a href="/?tags=JAX" class="btn btn-sm btn-ghost normal-case mt-2 mr-2 p-category">#JAX
+          </a></div></div>
+  
+    </article>
+    <footer id="footer" class="footer footer-center bg-base-300 text-base-content shadow-inner p-8 md:rounded-box sticky bottom-0 z-0 md:static "><div class="prose"><p><a href="/atom.xml" rel="noopener noreferrer external" target="_blank">Feed</a>
+          <span class="mr-1">·</span><a href="/sitemap.xml" rel="noopener noreferrer external" target="_blank">Sitemap</a>
+          
+        <br>
+      Copyright © 2023
+      Sandesh Katakam
+      <br>
+      Powered by
+      <a rel="noopener noreferrer external" target="_blank" class="tooltip tooltip-secondary hover:text-secondary" data-tip="🌸 [δ] - Based on MDsveX & SvelteKit 🌸" href="https://github.com/importantimport/urara">Urara
+      </a>
+      </p></div></footer></div></div></div>
+
+
+			<script type="application/json" data-sveltekit-fetched data-url="/posts.json">{"status":200,"statusText":"","headers":{},"body":"[{\"title\":\"Porfolio\",\"toc\":false,\"flags\":[\"unlisted\"],\"created\":\"2023-12-20T08:32:44.469Z\",\"updated\":\"2023-12-20T08:32:44.469Z\",\"slug\":\"/porfolio/+page.svelte.md\",\"path\":\"/porfolio\",\"type\":\"article\",\"html\":\"\"},{\"title\":\"Building My Transformer From Scratch in JAX\",\"image\":\"/building-transformer-from-scratch-in-jax/transformers_image.webp\",\"summary\":\"Building Transformer architecture from groundup in JAX Framework\",\"created\":\"2023-12-01T00:00:00.000Z\",\"tags\":[\"Transformers\",\"Open Source\",\"JAX\"],\"toc\":[{\"depth\":1,\"title\":\"Building My Transformer From Scratch in JAX\",\"slug\":\"building-my-transformer-from-scratch-in-jax\"}],\"flags\":[],\"updated\":\"2023-12-20T08:32:44.465Z\",\"slug\":\"/building-transformer-from-scratch-in-jax/+page.svelte.md\",\"path\":\"/building-transformer-from-scratch-in-jax\",\"type\":\"article\",\"html\":\"\"},{\"title\":\"JAX For All Trades\",\"image\":\"/jax-for-all-trades/jax_xla.webp\",\"summary\":\"learnings from my JAX Journey (From PyTorch To JAX)\",\"created\":\"2023-12-01T00:00:00.000Z\",\"tags\":[\"Open Source\",\"JAX\"],\"toc\":[{\"depth\":1,\"title\":\"JAX For All Trades: Learnings from my JAX Journey\",\"slug\":\"jax-for-all-trades-learnings-from-my-jax-journey\"}],\"flags\":[],\"updated\":\"2023-12-20T08:32:44.469Z\",\"slug\":\"/jax-for-all-trades/+page.svelte.md\",\"path\":\"/jax-for-all-trades\",\"type\":\"article\",\"html\":\"\"},{\"title\":\"From Scratch all over again ..\",\"image\":\"/first-post-on-this-blog/first-post.webp\",\"summary\":\"The first Blog post in this newly revamped blog\",\"created\":\"2023-07-08T00:00:00.000Z\",\"tags\":[\"First Post\"],\"toc\":[{\"depth\":1,\"title\":\"From Scratch All Over Again:\",\"slug\":\"from-scratch-all-over-again\"}],\"flags\":[],\"updated\":\"2023-12-20T08:32:44.465Z\",\"slug\":\"/first-post-on-this-blog/+page.svelte.md\",\"path\":\"/first-post-on-this-blog\",\"type\":\"article\",\"html\":\"\"}]"}</script>
+			<script>
+				{
+					__sveltekit_bhi18e = {
+						base: new URL("..", location).pathname.slice(0, -1),
+						env: {}
+					};
+
+					const element = document.currentScript.parentElement;
+
+					const data = [null,null];
+
+					Promise.all([
+						import("../_app/immutable/entry/start.2c8a6388.js"),
+						import("../_app/immutable/entry/app.d17af429.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 3],
+							data,
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		</div>
+  </body>
+</html>

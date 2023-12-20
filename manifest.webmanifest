@@ -1,6 +1,6 @@
 {
-  "name": "Sandesh Katakam",
-  "short_name": "Sandesh Katakam",
+  "name": "Off the Convex Path",
+  "short_name": "Off the Convex Path",
   "lang": "en-US",
   "description": "Powered by SvelteKit/Urara",
   "id": "https://urara-demo.netlify.app/",
@@ -12,25 +12,25 @@
   "theme_color": "#3D4451",
   "icons": [
     {
-      "src": "https://urara-demo.netlify.app/assets/any@192.png",
+      "src": "https://urara-demo.netlify.app/assets/android-chrome-192x192.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "https://urara-demo.netlify.app/assets/any@512.png",
+      "src": "https://urara-demo.netlify.app/assets/android-chrome-512x512.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "https://urara-demo.netlify.app/assets/maskable@192.png",
+      "src": "https://urara-demo.netlify.app/assets/android-chrome-192x192.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "maskable"
     },
     {
-      "src": "https://urara-demo.netlify.app/assets/maskable@512.png",
+      "src": "https://urara-demo.netlify.app/assets/android-chrome-512x512.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "maskable"
