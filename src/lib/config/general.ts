@@ -59,41 +59,14 @@ export const header: HeaderConfig = {
       text: 'Portfolio',
       link: '/porfolio/'
     },
-    {
-      text: 'Reinforcement Learning',
-      children: [
-        {
-          text: 'David Silver Reinforcement Learning Course Notes',
-          link: '/reinforcement-learning/'
-        },
-        {
-          text: 'Model-Based Reinforcement Learning: A Survey',
-          link: '/model-based-reinforcement-learning/'
-        }
-      ]
-    },
-    {
-      text: 'Neural DEs',
-      children: [
-        {
-          text: 'Survey Blog post on Neural DEs',
-          link: '/neuralodes/neuralode-post/'
-        }
-      ]
-    },
 
     {
       text: 'Software',
-      children: [
-        {
-          text: 'Introduction to NeoVim',
-          link: '/intro-to-nvim/'
-        }
-      ]
+      link: '/software/'
     },
     {
-      text: 'Deep Generative Models',
-      link: '/deep-generative-models/'
+      text: 'Open Source Software',
+      link: '/open-source-software/'
     }
   ]
 }

@@ -10,16 +10,7 @@ flags:
 	import MD from "$lib/md";
   const things = [
     {
-      label: 'Tranformers United',
-      icon: 'https://img.icons8.com/clouds/100/code.png',
-      desc: 'Implementation of Transformer Architecture in JAX',
-      links: [
-        ['Blog Post', 'https://github.com/sandeshkatakam/Generative-Models-in-JAX'],
-        ['Source Code', 'https://github.com/sandeshkatakam/Transformers-United']
-      ]
-    },
-    {
-      label: 'Generative Models in JAX',
+      label: 'JAXGenesis: Generative Models in JAX',
       icon: 'https://img.icons8.com/clouds/100/code.png',
       desc: 'Implementations of generative models in JAX framework',
       links: [
@@ -28,32 +19,15 @@ flags:
       ]
     },
     {
-      label: 'SpinningUp RL in Julia',
+      label: 'SpinningUp RL in JAX',
       icon: 'https://img.icons8.com/clouds/100/code.png',
-      desc: 'Implementation of RL Algos in Julia',
+      desc: 'Implementation of RL Algos in JAX',
       links: [
         ['Blog Post', 'https://github.com/sandeshkatakam/Generative-Models-in-JAX'],
-        ['Source Code', 'https://github.com/sandeshkatakam/SpinningUp-RL-Julia']
+        ['Source Code', 'https://github.com/sandeshkatakam/SpinningUp-RL-JAX']
       ]
     },
-        {
-      label: 'NeuralODE for Brain Tumor Segmentation',
-      icon: 'https://img.icons8.com/clouds/100/code.png',
-      desc: 'Implementation of NeuralODE Model for BraTS dataset',
-      links: [
-        ['Blog Post', 'https://github.com/sandeshkatakam/Generative-Models-in-JAX'],
-        ['Source Code', 'https://github.com/sandeshkatakam/NeuralODEs-for-brain-tumor-segmentation']
-      ]
-    },
-    {
-      label: 'Numerics.jl',
-      icon: 'https://img.icons8.com/clouds/100/code.png',
-      desc: 'Julia package for Scientific computing and Numerical Methods',
-      links: [
-        ['Blog Post', 'https://github.com/sandeshkatakam/Generative-Models-in-JAX'],
-        ['Source Code', 'https://github.com/sandeshkatakam/Numerics.jl']
-      ]
-    },
+  
   ]
 </script>
 <!-- ``` -->
