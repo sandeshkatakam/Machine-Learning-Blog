@@ -59,15 +59,6 @@ export const header: HeaderConfig = {
       text: 'Portfolio',
       link: '/porfolio/'
     },
-
-    {
-      text: 'Software',
-      link: '/software/'
-    },
-    {
-      text: 'Open Source Software',
-      link: '/open-source-software/'
-    }
   ]
 }
 
